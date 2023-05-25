@@ -1,0 +1,52 @@
+html{
+    overflow-y:auto;
+    overflow-x:hidden;
+   
+    background-color: black;
+
+}
+.img{
+    top: 40px;
+    position: relative;
+    animation: teste 0s 1.1s both;
+    left: 35%;
+}
+.texto{
+    position: relative;
+    top: 180px;
+    left: 40%;
+    max-width: 400px;
+    color: white;
+    
+}
+.projetos{
+    position: relative;
+    top: 200px;
+    left: 4%;
+    text-align:  center;
+}
+.bloco{
+    position: relative;
+    
+}
+.bloco:after{
+    content: "";
+    position:absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: translateY(-100%);
+    animation: revelador 0.5s 1.1s both;
+}
+
+@keyframes teste {
+    from {opacity: 0};
+    to {opacity: 1};
+}
+@keyframes revelador {
+    from{ transform: translateY(0); }
+    to{transform: translateY(100%);}
+
+}
